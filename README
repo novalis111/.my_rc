@@ -1,0 +1,14 @@
+#
+# My rc for Linux, BSD etc.
+#
+
+If you want to use my config for screen, vim and so on, simply do this:
+
+cd ~
+mkdir .my_rc
+cd .my_rc
+git clone git://github.com/novalis111/my_rc.git
+cd ~
+ln -s .my_rc/.vimrc .
+ln -s .my_rc/.screenrc .
+ln -s .my_rc/.vim . 
