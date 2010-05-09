@@ -1,22 +1,25 @@
 #!/bin/sh
-if [ -d ~/.vim ]; then
-    mv ~/.vim ~/.vim_old
+cd ~
+if [ -d .vim ] && [ ! -L .vim ]; then
+    mv .vim .vim_old
 fi
-rm ~/.vim
-ln -s ~/.my_rc/.vim ~/.vim
+rm .vim
+ln -s .my_rc/.vim .
 
-if [ -f ~/.vimrc ]; then
-    mv ~/.vimrc ~/.vimrc_old
+if [ -f .vimrc ] && [ ! -L .vimrc ]; then
+    mv .vimrc .vimrc_old
 fi
-rm ~/.vimrc
-ln -s ~/.my_rc/.vimrc ~/.vimrc
+rm .vimrc
+ln -s .my_rc/.vimrc .
 
-if [ -f ~/.screenrc ]; then
-    mv ~/.screenrc ~/.screenrc_old
+if [ -f .screenrc ] && [ ! -L .screenrc ]; then
+    mv .screenrc .screenrc_old
 fi
-rm ~/.screenrc
-ln -s ~/.my_rc/.screenrc ~/.screenrc
+rm .screenrc
+ln -s .my_rc/.screenrc .
 
-ln -s ~/.vim/colors/inkpot/colors/inkpot.vim ~/.vim/colors/inkpot.vim
+if [ ! -f .vim/colors/inkpot.vim ]; then
+    ln -s .vim/colors/inkpot/colors/inkpot.vim .vim/colors/inkpot.vim
+fi
 
 exit 0
