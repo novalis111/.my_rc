@@ -18,8 +18,4 @@ fi
 rm .screenrc
 ln -s .my_rc/.screenrc .
 
-if [ ! -f .vim/colors/inkpot.vim ]; then
-    ln -s .vim/colors/inkpot/colors/inkpot.vim .vim/colors/inkpot.vim
-fi
-
 exit 0
