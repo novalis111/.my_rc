@@ -1,0 +1,53 @@
+# silent start
+startup_message off
+
+# scroll with shift-pgup + shift-pgdown
+# termcapinfo rxvt-unicode ti@:te@
+termcapinfo xterm*|rxvt*|kterm*|Eterm* 'hs:ts=\E]0;:fs=\007:ds=\E]0;\007'
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+# change windows with F11 + F12
+bindkey -k F1 prev
+bindkey -k F2 next
+
+# remove some key bindings
+bind k
+bind W
+bind ^k
+bind .
+bind ^\
+bind \\
+bind ^h
+bind h
+# make them safer
+bind 'K' kill
+bind 'W' windowlist
+
+# bells and msgs
+vbell on
+bell off
+bell_msg "!!! Ding !!!"
+activity "%c activity -> %n%f %t"
+
+# captions
+# backtick 1 5 5 uptime
+# hardstatus alwayslastline
+# hardstatus string '%{= kG}%-Lw%{= kW}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}%-=%D, %d.%m.%Y | %c | %1`%{-}'
+# hardstatus string '[ %H ] - %1`'
+caption always '%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %{= Lw}%-= | Load: %l'
+# caption always '%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%< %{= Lw}%-=%D, %d.%m.%Y | %c | Load: %l'
+# caption always '[ %H ]%-Lw%{= BW}%1`%{-}'
+
+# http://www.debian-administration.org/articles/560
+# caption     always        "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %72=Load: %l %{wk}"
+# hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
+
+defscrollback 5000
+altscreen on
+autodetach on
+terminfo rxvt-unicode ti@:te@:
+term screen-256color
+setenv LC_CTYPE de_DE.UTF-8
+defutf8 on
+setenv DISPLAY ':0'
+nonblock on
