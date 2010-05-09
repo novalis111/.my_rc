@@ -14,4 +14,6 @@ if [ -w ~/.screenrc ]; then
 fi
 ln -s ~/.my_rc/.screenrc ~/.screenrc
 
+ln -s ~/.my_rc/inkpot/colors/inkpot.vim ~/.my_rc/.vim/colors/inkpot.vim
+
 exit 0
