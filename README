@@ -1,5 +1,5 @@
 #
-# My rc for Linux, BSD etc.
+# vim + screen config and files for Linux, BSD etc.
 #
 
 If you want to use my config for screen, vim and so on, simply do this:
@@ -7,3 +7,11 @@ If you want to use my config for screen, vim and so on, simply do this:
 cd ~
 git clone git://github.com/novalis111/.my_rc.git
 sh ~/.my_rc/setup.sh
+
+#
+# useful vim + screen links
+#
+http://en.how-to.mobi/index.php?sd=de&id=95072
+http://vim.wikia.com/wiki/256_colors_in_vim
+http://github.com/ciaranm/inkpot
+http://en.wikibooks.org/wiki/Learning_the_vi_editor
