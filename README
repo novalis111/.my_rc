@@ -9,6 +9,12 @@ git clone git://github.com/novalis111/.my_rc.git
 sh ~/.my_rc/setup.sh
 
 #
+# Windows Tools
+#
+
+Add fancy context-menu links for (portable) gvim by editing the .reg file in .my_rc/wintools and add it to your registry. There is one for "gvim edit" and one for "gvim explore". The latter opens (g)vim in explore mode in current directory, which is cool.
+
+#
 # useful vim + screen links
 #
 http://en.how-to.mobi/index.php?sd=de&id=95072
