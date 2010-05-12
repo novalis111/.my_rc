@@ -99,3 +99,7 @@ if filereadable("~/.vimrc")
   source ~/.vimrc
 endif
 
+if filereadable(".vimrc")
+  source .vimrc
+endif
+
