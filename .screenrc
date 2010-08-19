@@ -48,6 +48,8 @@ autodetach on
 terminfo rxvt-unicode ti@:te@:
 # term should be autodetected
 #term screen-256color
+#term xterm-256color
+#term xterm
 setenv LC_CTYPE de_DE.UTF-8
 defutf8 on
 setenv DISPLAY ':0'
