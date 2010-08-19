@@ -46,8 +46,18 @@ defscrollback 5000
 altscreen on
 autodetach on
 terminfo rxvt-unicode ti@:te@:
-term screen-256color
+#term screen-256color
+term xterm
 setenv LC_CTYPE de_DE.UTF-8
 defutf8 on
 setenv DISPLAY ':0'
 nonblock on
+
+# 256 colors
+# terminfo and termcap for nice 256 color terminal
+# allow bold colors - necessary for some reason
+attrcolor b ".I"
+# tell screen how to set colors. AB = background, AF=foreground
+termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+# erase background with current bg color
+defbce "on" 

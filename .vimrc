@@ -95,7 +95,7 @@ syntax enable
 
 " colors
 set t_Co=256
-colorscheme inkpot
+colorscheme desert256
 
 " no backups
 set nobackup
