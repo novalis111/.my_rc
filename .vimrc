@@ -59,7 +59,7 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  set autoindent " always set autoindenting on
 
 endif " has("autocmd")
 
@@ -95,7 +95,7 @@ syntax enable
 
 " colors
 set t_Co=256
-colorscheme desert256
+colorscheme inkpot
 
 " no backups
 set nobackup
