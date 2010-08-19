@@ -28,7 +28,7 @@ ln -s .my_rc/.screenrc .
 # repeat
 if [ -f .bashrc ] && [ ! -L .bashrc ]; then
     mv .bashrc .bashrc_old
-elif [ -L .bashrc ]
+elif [ -L .bashrc ]; then
     rm .bashrc
 fi
 ln -s .my_rc/.bashrc .
