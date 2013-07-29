@@ -1,5 +1,9 @@
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
 if [ -x ~/bin/syncTime.sh ]; then
     ~/bin/syncTime.sh
 fi
-cd /var/www/
-screen -rD -RR
+if [ -d "/var/www/" ]; then
+    cd /var/www/
+fi
