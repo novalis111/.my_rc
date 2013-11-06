@@ -33,11 +33,4 @@ elif [ -L .bashrc ]; then
 fi
 ln -s .my_rc/.bashrc .
 
-# repeat
-if [ -f .bash_profile ] && [ ! -L .bash_profile ]; then
-    mv .bash_profile .bash_profile_old
-fi
-rm .bash_profile
-ln -s .my_rc/.bash_profile .
-
 exit 0
