@@ -43,6 +43,12 @@ xterm*|rxvt*)
     ;;
 esac
 
+# TMUX
+if which tmux 2>&1 >/dev/null && [ ! -f ~/.notmux ]; then
+    #if not inside a tmux session, and if no session is started, start a new session
+    test -z "$TMUX" && (tmux attach || tmux new-session)
+fi
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
