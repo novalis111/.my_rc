@@ -94,8 +94,9 @@ set visualbell
 syntax enable
 
 " colors
-set t_Co=256
-colorscheme inkpot
+" set t_Co=256
+set background=dark
+colorscheme solarized
 
 " no backups
 set nobackup
