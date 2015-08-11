@@ -83,7 +83,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Zugehörige Klammern anzeigen
+" ZugehÃ¶rige Klammern anzeigen
 set showmatch
 
 " Kein Gefiepe
@@ -105,7 +105,7 @@ set nobackup
 set nowrap
 
 " nice font
-set gfn=ProggyCleanTTSZ:h12:cANSI
+set gfn=Droid\ Sans\ Mono\ 10
 
 "
 " Tabs
