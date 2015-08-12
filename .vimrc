@@ -24,7 +24,7 @@ set autoindent                  " indent new lines
 syntax enable                   " syntax hl
 set showmatch                   " show matching brackets etc
 set nobackup                    " no backup files
-set noswapfile                  " disable swap
+"set noswapfile                  " disable swap
 set ttimeoutlen=50              " Solves: there is a pause when leaving insert mode
 set splitbelow                  " Horizontal splits open below current file
 set splitright                  " Vertical splits open to the right of the current file
