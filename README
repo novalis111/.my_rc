@@ -1,15 +1,17 @@
-# vim + tmux + screen config and files for Linux
-If you want to use my config for screen, vim and so on, simply do this:
+# vim + tmux config
+If you want to use my config
 
-cd ~
-git clone git://github.com/novalis111/.my_rc.git
-sh ~/.my_rc/setup.sh
-
-# Windows Tools
-Add fancy context-menu links for (portable) gvim by editing the .reg file in .my_rc/wintools and add it to your registry. There is one for "gvim edit" and one for "gvim explore". The latter opens (g)vim in explore mode in current directory, which is cool.
+git clone git://github.com/novalis111/.my_rc.git ~/
+cp -r ~/.my_rc/.vim ~/
+cp ~/.my_rc/.vimrc ~/
+cp ~/.my_rc/.tmux.conf ~/
 
 # Useful links
-http://en.how-to.mobi/index.php?sd=de&id=95072
-http://vim.wikia.com/wiki/256_colors_in_vim
-http://github.com/ciaranm/inkpot
-http://en.wikibooks.org/wiki/Learning_the_vi_editor
+- https://github.com/tpope/vim-pathogen
+- https://github.com/altercation/vim-colors-solarized
+- http://stackoverflow.com/questions/2861627/paste-in-insert-mode
+- https://github.com/nickaigi/config/blob/master/.vimrc
+- https://github.com/zaiste/vimified
+- https://github.com/VundleVim/Vundle.vim/wiki/Examples
+- https://github.com/shawncplus/phpcomplete.vim
+- http://en.wikibooks.org/wiki/Learning_the_vi_editor

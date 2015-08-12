@@ -1,5 +1,0 @@
-REGEDIT4
-[HKEY_CURRENT_USER\Software\Classes\Folder\shell\gvim explore\command]
-@="\"T:\\Apps.Portable\\gVimPortable\\gVimPortable.exe\" ."
-[HKEY_CURRENT_USER\Software\Classes\*\shell\gvim edit\command]
-@="\"T:\\Apps.Portable\\gVimPortable\\gVimPortable.exe\" %1"
