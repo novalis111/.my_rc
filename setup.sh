@@ -6,4 +6,4 @@ ln -s ~/.my_rc/.vim ~/
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 ln -s ~/.my_rc/.vimrc ~/
 ln -s ~/.my_rc/.tmux.conf ~/
-ln -s ~/.bash_aliases ~/
+ln -s ~/.my_rc/.bash_aliases ~/
