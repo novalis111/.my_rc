@@ -6,5 +6,4 @@ cd ~
 [[ ! -L ~/.vimrc ]] && ln -s ~/.my_rc/.vimrc ~/
 [[ ! -L ~/.tmux.conf ]] && ln -s ~/.my_rc/.tmux.conf ~/
 [[ ! -L ~/.bash_aliases ]] && ln -s ~/.my_rc/.bash_aliases ~/
-[[ ! -L ~/.bash_profile ]] && ln -s ~/.my_rc/.bash_profile ~/
 echo "All done."
