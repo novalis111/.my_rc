@@ -6,4 +6,11 @@ cd ~
 [[ ! -L ~/.vimrc ]] && ln -s ~/.my_rc/.vimrc ~/
 [[ ! -L ~/.tmux.conf ]] && ln -s ~/.my_rc/.tmux.conf ~/
 [[ ! -L ~/.bash_aliases ]] && ln -s ~/.my_rc/.bash_aliases ~/
+[[ ! -L ~/.bash_profile ]] && ln -s ~/.my_rc/.bash_profile ~/
+if ! grep -q '.my_bash' ~/.bashrc; then
+    echo "[ -r ~/.my_rc/.my_bash ] && . ~/.my_rc/.my_bash" >> ~/.bashrc
+fi
+if ! grep -q '.bash_aliases' ~/.bashrc; then
+    echo "[ -r ~/.bash_aliases ] && . ~/.bash_aliases" >> ~/.bashrc
+fi
 echo "All done."
