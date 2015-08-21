@@ -1,8 +1,8 @@
-# my dotfiles
+## my dotfiles
 git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
 bash .my_rc/setup.sh
 
-# Useful links
+## Useful links
 - https://github.com/tpope/vim-pathogen
 - https://github.com/altercation/vim-colors-solarized
 - http://stackoverflow.com/questions/2861627/paste-in-insert-mode
