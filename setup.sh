@@ -20,5 +20,4 @@ fi
 if ! grep -q '.bash_aliases' ~/.bashrc; then
     echo "[ -r ~/.bash_aliases ] && . ~/.bash_aliases" >> ~/.bashrc
 fi
-[ -r ~/.bashrc ] && . ~/.bashrc
-echo "All done."
+echo "All done, 'source ~/.bashrc' to apply changes."
