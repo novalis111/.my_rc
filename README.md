@@ -1,6 +1,4 @@
-# vim + tmux config
-If you want to use my config
-
+# my dotfiles
 git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
 bash .my_rc/setup.sh
 
