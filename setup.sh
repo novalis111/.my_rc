@@ -20,5 +20,5 @@ fi
 if ! grep -q '.bash_aliases' ~/.bashrc; then
     echo "[ -r ~/.bash_aliases ] && . ~/.bash_aliases" >> ~/.bashrc
 fi
-source ~/.bashrc
+[ -r ~/.bashrc ] && . ~/.bashrc
 echo "All done."
