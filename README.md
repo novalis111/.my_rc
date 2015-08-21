@@ -1,6 +1,12 @@
 ## my dotfiles
+```bash
+wget https://raw.githubusercontent.com/novalis111/.my_rc/master/setup.sh -O - | bash
+```
+or
+```bash
 git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
 bash .my_rc/setup.sh
+```
 
 ## Useful links
 - https://github.com/tpope/vim-pathogen

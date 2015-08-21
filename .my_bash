@@ -1,4 +1,5 @@
 export HISTCONTROL=ignoreboth:erasedups
+export PROMPT_DIRTRIM=11
 
 #
 # Prompt

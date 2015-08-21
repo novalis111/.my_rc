@@ -1,6 +1,14 @@
 #!/bin/bash -e
+git --version 2>&1 >/dev/null
+GIT_IS_AVAILABLE=$?
+if [ ! $GIT_IS_AVAILABLE -eq 0 ]; then
+    echo "git not found"
+    exit 1
+fi
 cd ~
-# git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
+if [[ ! -d ~/.my_rc ]]; then
+    git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
+fi
 for f in ".vim" ".vimrc" ".tmux.conf" ".bash_aliases" ".bash_profile"
 do
     [[ ! -L ~/$f ]] && ln -s ~/.my_rc/$f ~/ || echo "$f exists, skipped"
