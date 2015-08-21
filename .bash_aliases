@@ -7,3 +7,4 @@ alias glog="git log --pretty=tformat:'%h %Cblue%cr%Creset %cn %Cgreen%s%Creset'"
 alias gst='git status'
 alias f="find . | grep -i "
 alias p="ps aux | grep -i "
+alias cow="fortune | cowsay -n -e^^ -TU"
