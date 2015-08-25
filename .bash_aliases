@@ -9,3 +9,4 @@ alias f="find . | grep -i "
 alias p="ps aux | grep -i "
 alias cow="fortune | cowsay -n -e^^ -TU"
 alias duh='du -hcs * | sort -h'
+alias c='clear'
