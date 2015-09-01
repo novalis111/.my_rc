@@ -7,6 +7,10 @@ set background=dark
 colorscheme solarized
 set gfn=Droid\ Sans\ Mono\ 10
 
+" Clipboard - see http://vim.wikia.com/wiki/VimTip984 +
+" http://vim.wikia.com/wiki/VimTip21
+set clipboard=unnamedplus,unnamed
+
 " Editor
 set backspace=indent,eol,start  " allow backspacing over everything in insert mode
 set history=50                  " keep 50 lines of command line history

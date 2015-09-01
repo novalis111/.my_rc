@@ -2,6 +2,12 @@ export HISTCONTROL=ignoreboth:erasedups
 export PROMPT_DIRTRIM=11
 
 #
+# Path
+#
+PATH=$PATH:~/bin
+export PATH
+
+#
 # Prompt
 #
 if [ -n "$SSH_CLIENT" ]; then
@@ -20,6 +26,16 @@ smiley ()
 PS1='# \[\e[1;32m\]\u@\H `smiley` \[\e[0;32m\]\w\[\e[0m\]\n${sshtxt}\$ '
 
 #
-# Tools
+# Use up x to go up x dir levels
 #
 up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
+
+#
+# Resume or start tmux session
+#
+tm ()
+{
+    if which tmux 2>&1 >/dev/null && [ ! -f ~/.notmux ]; then
+        test -z "$TMUX" && (tmux attach || tmux new-session)
+    fi
+}
