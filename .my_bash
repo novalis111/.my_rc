@@ -1,15 +1,17 @@
 export HISTCONTROL=ignoreboth:erasedups
 export PROMPT_DIRTRIM=11
 
-#
-# Path
-#
-PATH=$PATH:~/bin
-export PATH
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
 
-#
+# Laravel
+if [ -d "$HOME/.composer/vendor/laravel/installer" ] ; then
+    PATH="$HOME/.composer/vendor/laravel/installer:$PATH"
+fi
+
 # Prompt
-#
 if [ -n "$SSH_CLIENT" ]; then
     sshtxt="[ssh] "
 fi
@@ -25,14 +27,10 @@ smiley ()
 }
 PS1='# \[\e[1;32m\]\u@\H `smiley` \[\e[0;32m\]\w\[\e[0m\]\n${sshtxt}\$ '
 
-#
-# Use up x to go up x dir levels
-#
+# Use "up x" to go up x dir levels
 up() { cd $(eval printf '../'%.0s {1..$1}) && pwd; }
 
-#
 # Resume or start tmux session
-#
 tm ()
 {
     if which tmux 2>&1 >/dev/null && [ ! -f ~/.notmux ]; then
