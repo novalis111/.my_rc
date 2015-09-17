@@ -1,5 +1,5 @@
 alias updeb='sudo apt-get update && sudo apt-get dist-upgrade'
-alias upme='cd ~/.my_rc && git pull && cd -'
+alias upmy='cd ~/.my_rc && git pull && cd -'
 alias h='history'
 alias hgr='history | grep -i '
 alias l='ls -h --color'
