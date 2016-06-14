@@ -14,6 +14,7 @@ do
     [[ ! -L ~/$f ]] && ln -s ~/.my_rc/$f ~/ || echo "$f exists, skipped"
 done
 [[ ! -d ~/.vim/bundle/vim-airline ]] && git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
+[[ ! -d ~/.vim/bundle/vim-airline-themes ]] && git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 if ! grep -q '.my_bash' ~/.bashrc; then
     echo "[ -r ~/.my_rc/.my_bash ] && . ~/.my_rc/.my_bash" >> ~/.bashrc
 fi
