@@ -6,9 +6,9 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-# Laravel
-if [ -d "$HOME/.composer/vendor/laravel/installer" ] ; then
-    PATH="$HOME/.composer/vendor/laravel/installer:$PATH"
+# composer vendor bins
+if [ -d "$HOME/.composer/vendor/bin" ] ; then
+    PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
 
 # Prompt
