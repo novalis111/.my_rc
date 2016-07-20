@@ -4,7 +4,7 @@ wget https://raw.githubusercontent.com/novalis111/.my_rc/master/setup.sh -O - | 
 ```
 or
 ```bash
-git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
+git clone https://github.com/novalis111/.my_rc.git ~/.my_rc
 bash .my_rc/setup.sh
 ```
 

@@ -7,7 +7,7 @@ if [ ! $GIT_IS_AVAILABLE -eq 0 ]; then
 fi
 cd ~
 if [[ ! -d ~/.my_rc ]]; then
-    git clone git://github.com/novalis111/.my_rc.git ~/.my_rc
+    git clone https://github.com/novalis111/.my_rc.git ~/.my_rc
 fi
 for f in ".vim" ".vimrc" ".tmux.conf" ".bash_aliases" ".bash_profile"
 do
