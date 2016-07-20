@@ -37,3 +37,6 @@ tm ()
         test -z "$TMUX" && (tmux attach || tmux new-session)
     fi
 }
+
+# Use https://github.com/rupa/z for jumping around dirs
+[ -r ~/.my_rc/z/z.sh ] && . ~/.my_rc/z/z.sh
