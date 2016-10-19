@@ -8,7 +8,11 @@ git clone https://github.com/novalis111/.my_rc.git ~/.my_rc
 bash .my_rc/setup.sh
 ```
 
+## Useful tools
+$ brew install task tasksh vit
+
 ## Useful links
+- http://taskwarrior.org/
 - https://github.com/tpope/vim-pathogen
 - https://github.com/altercation/vim-colors-solarized
 - http://stackoverflow.com/questions/2861627/paste-in-insert-mode
