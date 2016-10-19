@@ -11,3 +11,9 @@ alias p="ps aux | grep -i "
 alias cow="fortune | cowsay -n -e^^ -TU"
 alias duh='du -hcs * | sort -h'
 alias c='clear'
+# taskwarrior
+alias tw='task'
+alias twa='task add'
+alias tws='task sync'
+alias twm='task $1 modify $2'
+alias tsh='tasksh'
