@@ -7,6 +7,11 @@ bash < <(wget -q --no-check-certificate -O - https://raw.github.com/colinmollenh
 
 # magerun
 cd ~/bin
+if [ -f n98-magerun.phar ]; then
+    rm n98-magerun.phar
+fi
 wget https://files.magerun.net/n98-magerun.phar
 chmod +x n98-magerun.phar
-ln -s n98-magerun.phar magerun
+if [ ! -f magerun ]; then
+    ln -s n98-magerun.phar magerun
+fi
