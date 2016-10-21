@@ -1,6 +1,8 @@
 #!/bin/bash
-# git
-if [ ! -d "~/.my_rc/completions" ]; then
-    mkdir ~/.my_rc/completions
+COMPDIR=$HOME/.my_rc/completions
+if [ ! -d "$COMPDIR" ]; then
+    mkdir $COMPDIR
 fi
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.my_rc/completions/git.bash
+
+# git
+wget https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O $COMPDIR/git.bash
