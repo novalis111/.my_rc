@@ -11,6 +11,7 @@ alias p="ps aux | grep -i "
 alias cow="fortune | cowsay -n -e^^ -TU"
 alias duh='du -hcs * | sort -h'
 alias c='clear'
+alias woy='date +%V' # week of year
 # taskwarrior
 alias tw='task'
 alias twa='task add'
