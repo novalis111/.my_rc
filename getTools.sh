@@ -4,6 +4,7 @@ bash < <(wget -q --no-check-certificate -O - https://raw.github.com/colinmollenh
 
 # composer
 # todo
+# https://getcomposer.org/download/
 
 # magerun
 cd ~/bin
