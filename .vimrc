@@ -33,6 +33,7 @@ set ttimeoutlen=50              " Solves: there is a pause when leaving insert m
 set splitbelow                  " Horizontal splits open below current file
 set splitright                  " Vertical splits open to the right of the current file
 set wildmode=longest,list       " Pressing <Tab> shows command suggestions similar to pressing <Tab> in bash
+set mouse-=a                    " Disable auto-visual mode on mouse drag
 
 " root permission on a file inside VIM
 cmap w!! w !sudo tee >/dev/null %
