@@ -24,3 +24,20 @@ if [ $(command -v docker-compose 2>&1) ]; then
         . $COMPDIR/docker-compose.bash
     fi
 fi
+
+# Setting PATH for Python 3.6
+if [ -d /Library/Frameworks/Python.framework/Versions/3.6/bin ]; then
+    PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+    export PATH
+fi
+
+# miniconda
+if [ -f ~/miniconda3/etc/profile.d/conda.sh ]; then
+    . ~/miniconda3/etc/profile.d/conda.sh
+fi
+
+# Go Binaries
+if [ -d ~/go/bin ]; then
+    PATH="~/go/bin:${PATH}"
+    export PATH
+fi
