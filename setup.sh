@@ -15,11 +15,15 @@ do
 done
 [[ ! -d ~/.vim/bundle/vim-airline ]] && git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 [[ ! -d ~/.vim/bundle/vim-airline-themes ]] && git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
-[[ ! -f ~/.my_rc/z.sh ]] && git clone https://github.com/rupa/z.git ~/.my_rc/z
+[[ ! -f ~/.my_rc/z.sh && ! -d ~/.my_rc/z ]] && git clone https://github.com/rupa/z.git ~/.my_rc/z
+[[ ! -f ~/.direnvrc ]] && ln -s ~/.my_rc/.direnvrc ~/.direnvrc
 if ! grep -q '.my_bash' ~/.bashrc; then
     echo "[ -r ~/.my_rc/.my_bash ] && . ~/.my_rc/.my_bash" >> ~/.bashrc
 fi
 if ! grep -q '.bash_aliases' ~/.bashrc; then
     echo "[ -r ~/.bash_aliases ] && . ~/.bash_aliases" >> ~/.bashrc
+fi
+if ! grep -q 'direnv' ~/.bashrc; then
+    echo 'command -v direnv &>/dev/null && eval "$(direnv hook bash)"' >> ~/.bashrc
 fi
 echo "All done, 'source ~/.bashrc' to apply changes."
