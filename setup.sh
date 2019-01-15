@@ -15,6 +15,7 @@ do
 done
 [[ ! -d ~/.vim/bundle/vim-airline ]] && git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 [[ ! -d ~/.vim/bundle/vim-airline-themes ]] && git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
+[[ ! -d ~/.my_rc/.tmux/plugins/yank ]] && git clone https://github.com/tmux-plugins/tmux-yank ~/.my_rc/.tmux/plugins/yank
 [[ ! -f ~/.my_rc/z.sh && ! -d ~/.my_rc/z ]] && git clone https://github.com/rupa/z.git ~/.my_rc/z
 [[ ! -f ~/.direnvrc ]] && ln -s ~/.my_rc/.direnvrc ~/.direnvrc
 if ! grep -q '.my_bash' ~/.bashrc; then
