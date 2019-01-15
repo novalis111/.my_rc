@@ -55,3 +55,5 @@ inoremap <C-h>     <C-O>:tabprevious<cr>
 nnoremap <C-l>     :tabnext<cr>
 vnoremap <C-l>     <C-C>:tabnext<cr>
 inoremap <C-l>     <C-O>:tabnext<cr>
+" end highlight on cur search
+nnoremap <CR> :noh<CR><CR>
