@@ -17,7 +17,8 @@ done
 [[ ! -d ~/.vim/bundle/vim-airline-themes ]] && git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
 [[ ! -f ~/.my_rc/z.sh && ! -d ~/.my_rc/z ]] && git clone https://github.com/rupa/z.git ~/.my_rc/z
 [[ ! -f ~/.direnvrc ]] && ln -s ~/.my_rc/.direnvrc ~/.direnvrc
-[[ ! -f ~/.my_rc/.tmux-conf ]] && git clone https://github.com/novalis111/tmux-config.git ~/.my_rc/.tmux-conf && bash ~/.my_rc/.tmux-conf/install.sh
+[[ ! -d ~/.my_rc/.tmux-conf ]] && git clone https://github.com/novalis111/tmux-config.git ~/.my_rc/.tmux-conf && bash ~/.my_rc/.tmux-conf/install.sh
+[[ -d ~/.my_rc/.tmux-conf ]] && git -C ~/.my_rc/.tmux-conf pull && bash ~/.my_rc/.tmux-conf/install.sh
 if ! grep -q '.my_bash' ~/.bashrc; then
     echo "[ -r ~/.my_rc/.my_bash ] && . ~/.my_rc/.my_bash" >> ~/.bashrc
 fi
