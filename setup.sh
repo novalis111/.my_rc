@@ -9,15 +9,15 @@ cd ~
 if [[ ! -d ~/.my_rc ]]; then
     git clone https://github.com/novalis111/.my_rc.git ~/.my_rc
 fi
-for f in ".vim" ".vimrc" ".tmux.conf" ".bash_aliases" ".bash_profile"
+for f in ".vim" ".vimrc" ".bash_aliases" ".bash_profile"
 do
     [[ ! -L ~/$f ]] && ln -s ~/.my_rc/$f ~/ || echo "$f exists, skipped"
 done
 [[ ! -d ~/.vim/bundle/vim-airline ]] && git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 [[ ! -d ~/.vim/bundle/vim-airline-themes ]] && git clone https://github.com/vim-airline/vim-airline-themes ~/.vim/bundle/vim-airline-themes
-[[ ! -d ~/.my_rc/.tmux/plugins/yank ]] && git clone https://github.com/tmux-plugins/tmux-yank ~/.my_rc/.tmux/plugins/yank
 [[ ! -f ~/.my_rc/z.sh && ! -d ~/.my_rc/z ]] && git clone https://github.com/rupa/z.git ~/.my_rc/z
 [[ ! -f ~/.direnvrc ]] && ln -s ~/.my_rc/.direnvrc ~/.direnvrc
+[[ ! -f ~/.my_rc/.tmux-conf ]] && git clone https://github.com/novalis111/tmux-config.git ~/.my_rc/.tmux-conf && bash ~/.my_rc/.tmux-conf/install.sh
 if ! grep -q '.my_bash' ~/.bashrc; then
     echo "[ -r ~/.my_rc/.my_bash ] && . ~/.my_rc/.my_bash" >> ~/.bashrc
 fi

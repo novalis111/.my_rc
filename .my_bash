@@ -44,3 +44,9 @@ tm ()
 
 # Use https://github.com/rupa/z for jumping around dirs
 [ -r ~/.my_rc/z/z.sh ] && . ~/.my_rc/z/z.sh
+
+# Load miniconda if installed
+[ -r ~/miniconda3/etc/profile.d/conda.sh ] && . ~/miniconda3/etc/profile.d/conda.sh
+
+# Load direnv if installed
+command -v direnv &>/dev/null && eval "$(direnv hook bash)"
